@@ -45,122 +45,157 @@ body {
 }
 
 @media (max-width: 775px) {
-.header {
-    background-color: white;
-    width: auto;
-    padding: 20px 0;
-}
+  .header {
+      background-color: white;
+      width: auto;
+      padding: 20px 0;
+  }
 
-/* logo Brilyantova */
-.header-brand {
-  width: 200px;
-  padding: 5px 0 5px 5px;
-  display: block;   
-}
+  /* logo Brilyantova */
+  .header-brand {
+    width: 200px;
+    padding: 5px 0 5px 5px;
+    display: block;   
+  }
 
-.header-brand img  {
-position: relative;
-padding-top: auto;
-padding-bottom: auto;
-padding-left: 20px;
-align-items: center;
-width: 230px;
-}
-
-/* Hamburger */
-.icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  z-index: 1000;  
-}
-.hamburger {
-  width: 30px;
-  height: 3px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: .5s;
-}
-
-.hamburger:before, 
-.hamburger:after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background: #000;;
-}
-
-.hamburger:before {
-  top: -15px;
-}
-
-.hamburger:after {
-  top: 15px;
-}
-/* fin of hamburger */
-
-.hamburger:hover {
-  background: transparent;
-} 
-
-.hamburger:before:hover,
-.hamburger:after:hover  {
-    transform-origin: center;
-    transform: rotate(45deg);
-    top: 0;
-} 
-
-.main-nav {
-  display: none;
-}
-/* site header */
-.site-header {
-  position: fixed;
-}
-
-.main-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,255,127, 0.9);
-  z-index: 1;
-  font-size: 2rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
+  .header-brand img  {
+  position: relative;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 20px;
   align-items: center;
-  justify-content: center;
-}
+  width: 230px;
+  }
 
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+  /* Hamburger */
+  .header .icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 1000;  
+  }
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+  }
 
-.main-nav li {
-  margin-bottom: 1em;
-}
-.main-nav a {
-  text-decoration: none;
-  color: black;
-}
+  .hamburger::before, 
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    transition: all .3s ease;
+  }
 
-.main-nav {
-  display: none;
-}
+  .hamburger::before {
+    top: -15px;
+  }
 
-body.frezzed {
-  overflow: hidden;
-}
+  .hamburger::after {
+    top: 15px;
+  }
+  /* fin of hamburger */
+  /* ham hover */
+  .icon:hover {
+    background: transparent;
+  } 
+
+  .icon:hover .hamburger::before {
+      transform-origin: center;
+      transform: rotate(135deg);
+      top: 0;
+  } 
+  .icon:hover .hamburger::after  {
+      transform-origin: center;
+      transform: rotate(45deg);
+      top: 0;
+  }
+  /* fim of ham hover */
+
+  /* site header */
+  .site-header {
+    position: fixed;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,255,127, 0.9);
+    z-index: 1;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-nav li {
+    margin-bottom: 1em;
+  }
+  .main-nav a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  body.frezzed {
+    overflow: hidden;
+  }
+
+  /* main nav */
+  .main {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;   
+  }
+  .proj-gallery img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;   
+    display: block;  
+  }
+  ul {
+    margin: 0px;  
+    padding: 0px;
+  }
+
+  .proj-gallery-cont1  {
+    position: relative;
+  }
+
+  .proj-gallery p {
+    size: 14px;
+    color: black;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+  }
+
 }
