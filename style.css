@@ -214,7 +214,6 @@ ul {
 }
 
 /* Pag Passinho */
-
 .projeto img {
 width: 100%;
 height: auto;
@@ -236,7 +235,6 @@ font-size: 14px;
 }
 
 /* About page */
-
 .me {
 width: 100%;
 padding: 20px;
@@ -352,33 +350,54 @@ text-align: left;
     /* max-width: 800px; */
     }
     
-    .me img {
-    /* display: inline-block; */
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    object-fit: cover;
-    margin-right: 60px;
-    }
-    
-    .me p {
-    width: 400px;
-    /* padding: 40px 20px 20px 30px;  */
-    font-size: 14px;
-    text-align: left;
-    }
-    
-    .me h5 {
+  .me img {
+  /* display: inline-block; */
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-right: 60px;
+  }
+  
+  .me p {
+  width: 400px;
+  /* padding: 40px 20px 20px 30px;  */
+  font-size: 14px;
+  text-align: left;
+  }
+  
+  .me h5 {
+  text-align: left;
+  /* padding: 40px 20px 20px 30px; */
+  }
+
+  .me h6 {
     text-align: left;
     /* padding: 40px 20px 20px 30px; */
-    }
+  }
+  /* Index page */
+  #main {
+    
+    
+  }
+  .proj-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 140px 0 0 0px;
+  }
 
-    .me h6 {
-      text-align: left;
-      /* padding: 40px 20px 20px 30px; */
-      }
+  .proj-gallery img {
+  display: flex;
+  margin: 10px;
+  width: 300px;
+  height: 300px;;
+  }
 
-     
+.main img {
+  max-width: 100%;
+  border-style: none;
+  vertical-align: middle;  
+  }    
 
 }
 
