@@ -12,14 +12,9 @@ html {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-<<<<<<< HEAD
     background-color: bisque;
 }
 
-=======
-    font-size: 16px;
-}
->>>>>>> 4d96e8cd908d47f2782486447bfa14f7dca80f5c
 /* Botao voltar */
 .btn-voltar {
   position: fixed;
@@ -49,7 +44,6 @@ body {
   background: springgreen;
 }
 
-<<<<<<< HEAD
 @media (max-width: 775px) {
   .header {
       background-color: white;
@@ -91,7 +85,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .5s;
+    transition: all .1s ease;
   }
 
   .hamburger::before, 
@@ -112,8 +106,12 @@ body {
     top: 15px;
   }
   /* fin of hamburger */
+
   /* ham hover */
   .icon:hover {
+    background: transparent;
+  } 
+  .icon:hover .hamburger {
     background: transparent;
   } 
 
@@ -133,7 +131,7 @@ body {
   .site-header {
     position: fixed;
   }
-
+/* list of projects */
   .main-nav {
     position: fixed;
     top: 0;
@@ -148,13 +146,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 0px; 
+    
   }
-
   .main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center;    
+  }
+/* JS action  */
+  .main-nav.open {
+      height: auto;
+      font-size: 20px;
+      line-height: 26px; 
   }
 
   .main-nav li {
@@ -163,15 +168,16 @@ body {
   .main-nav a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    /* transition: 0.3s; */
   }
 
-  .main-nav {
-    display: none;
-  }
 
   body.frezzed {
     overflow: hidden;
   }
+
+
 
   /* main nav */
   .main {
@@ -205,45 +211,13 @@ body {
   }
 
 }
-=======
-/* site header */
-.site-header {
-  position: fixed;
-}
-
-.main-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,255,127, 0.9);
-  z-index: 1;
-  font-size: 2rem;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-nav li {
-  margin-bottom: 1em;
-}
-.main-nav a {
-  text-decoration: none;
-  color: black;
-}
+/* Pag Passinho */
 
 
-body.frezzed {
-  overflow: hidden;
+.passinho img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;   
+  display: block;  
 }
->>>>>>> 4d96e8cd908d47f2782486447bfa14f7dca80f5c
+
