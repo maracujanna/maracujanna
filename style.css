@@ -15,221 +15,371 @@ body {
   
 }
 
+/* Index page */
+
 /* Botao voltar */
 .btn-voltar {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  border: 1px solid springgreen;
-  background: white;
-  /* botao fica com 28px */
-  border-radius: 30px;
-  width: 50px;
-  height: 50px;
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px;
+border: 1px solid springgreen;
+background: white;
+/* botao fica com 28px */
+border-radius: 30px;
+width: 50px;
+height: 50px;
 }
 
 .btn-voltar span {
-  /* hide text */
-  font-size: 0;
+/* hide text */
+font-size: 0;
 }
 
 /* show fontawesome icon */
 .btn-voltar .fas::before {
-  font-size: 16px;
-  line-height: 16px; 
+font-size: 16px;
+line-height: 16px; 
 }
 
 .btn-voltar:hover {
-  background: springgreen;
+background: springgreen;
 }
 
-  .header {
-      background-color: white;
-      width: auto;
-      padding: 20px 0;
-  }
+.header {
+    background-color: white;
+    width: auto;
+    padding: 20px 0;
+}
 
-  /* logo Brilyantova */
-  .header-brand {
-    width: 200px;
-    padding: 5px 0 5px 5px;
-    display: block;   
-  }
+/* logo Brilyantova */
+.header-brand {
+  width: 200px;
+  padding: 5px 0 5px 5px;
+  display: block;   
+}
 
-  .header-brand img  {
-  position: relative;
-  padding-top: auto;
-  padding-bottom: auto;
-  padding-left: 20px;
-  align-items: center;
-  width: 230px;
-  }
+.header-brand img  {
+position: relative;
+padding-top: auto;
+padding-bottom: auto;
+padding-left: 20px;
+align-items: center;
+width: 230px;
+}
 
-  /* Hamburger */
-  .header .icon {
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    z-index: 1000;  
-  }
+/* Hamburger */
+.header .icon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 1000;  
+}
 
-  .hamburger {
-    width: 30px;
-    height: 3px;
-    background: #000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all .1s ease;
-  }
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .1s ease;
+}
 
-  .hamburger::before, 
-  .hamburger::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background: #000;
-    transition: all .3s ease;
-  }
+.hamburger::before, 
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #000;
+  transition: all .3s ease;
+}
 
-  .hamburger::before {
-    top: -15px;
-  }
+.hamburger::before {
+  top: -15px;
+}
 
-  .hamburger::after {
-    top: 15px;
-  }
+.hamburger::after {
+  top: 15px;
+}
 
-  .icon:hover .hamburger::before {
-    top: -10px;
-  }
+.icon:hover .hamburger::before {
+  top: -10px;
+}
 
-  .icon:hover .hamburger::after {
-    top: 10px;
-  }
-  /* fin of hamburger */
+.icon:hover .hamburger::after {
+  top: 10px;
+}
 
-  body.open .icon {
-    background: transparent;
-  } 
-  body.open .icon .hamburger {
-    background: transparent;
-  } 
+body.open .icon {
+  background: transparent;
+} 
+body.open .icon .hamburger {
+  background: transparent;
+} 
 
-  body.open .icon .hamburger::before {
-      transform-origin: center;
-      transform: rotate(135deg);
-      top: 0;
-  } 
-  body.open .icon .hamburger::after  {
-      transform-origin: center;
-      transform: rotate(45deg);
-      top: 0;
-  }
-
-  /* site header */
-  .site-header {
-    position: fixed;
-  }
-/* list of projects */
-  .main-nav {
-    position: fixed;
+body.open .icon .hamburger::before {
+    transform-origin: center;
+    transform: rotate(135deg);
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,255,127, 0.9);
-    z-index: 1;
-    font-size: 0;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 0px;  
-  }
+} 
+body.open .icon .hamburger::after  {
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0;
+}
+/* fin of hamburger */
+/* site header */
+.site-header {
+  position: fixed;
+}
+/* list of projects */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,255,127, 0.9);
+  z-index: 1;
+  font-size: 0;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 0px;  
+}
 
-  .main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;    
-  }
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;    
+}
 /* JS action  */
-  body.open .main-nav {
-      line-height: 1.2em; 
-      font-size: 1.0rem;
-  }
+body.open .main-nav {
+    line-height: 1.2em; 
+    font-size: 1.0rem;
+}
 
-  .main-nav li {
-    margin-bottom: 1em;
-  }
-  .main-nav a {
-    text-decoration: none;
-    color: black;
-    /* transition: 0.3s; */
-  }
+.main-nav li {
+  margin-bottom: 1em;
+}
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  /* transition: 0.3s; */
+}
 
-  body.frezzed {
-    overflow: hidden;
-  }
+body.frezzed {
+  overflow: hidden;
+}
 
-  /* main nav */
-  .main {
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    position: absolute;   
-  }
-  .proj-gallery img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;   
-    display: block;  
-  }
-
-  ul {
-    margin: 0px;  
-    padding: 0px;
-  }
-
-  .proj-gallery-cont1  {
-    position: relative;
-  }
-
-  .proj-gallery p {
-    size: 14px;
-    color: black;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 16px;
-    left: 16px;
-  }
-
-/* Pag Passinho */
-
-.projeto img {
+/* main nav */
+.main {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;   
+}
+.proj-gallery img {
   width: 100%;
   height: 400px;
   object-fit: cover;   
   display: block;  
 }
 
+ul {
+  margin: 0px;  
+  padding: 0px;
+}
+
+.proj-gallery-cont1  {
+  position: relative;
+}
+
+.proj-gallery p {
+  size: 14px;
+  color: black;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+/* Pag Passinho */
+
+.projeto img {
+width: 100%;
+height: auto;
+object-fit: cover;   
+display: block;  
+}
+
 .about {
-  margin-left: 20px;
-  margin-right: 20px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 h4 {
-  text-transform: uppercase;
+text-transform: uppercase;
 }
+
 p {
-  font-size: 14px;
+font-size: 14px;
 }
+
+/* About page */
+
+.me {
+width: 100%;
+padding: 20px;
+margin-left: auto;
+margin-right: auto;
+max-width: 500px;
+text-align: center;
+}
+
+.me img {
+/* display: inline-block; */
+width: 200px;
+height: 200px;
+border-radius: 100px;
+object-fit: cover;
+}
+
+.me p {
+font-size: 14px;
+text-align: left;
+}
+
+.me h5 {
+text-align: left;
+}
+
+@media (min-width: 1000px) {
+  .main {
+    width: 100%;
+    padding-left: 400px;
+  }
+  /* Index page */
+  .icon {
+    display: none;
+  }
+  /* Project page */
+  .projeto {
+    width: 100%;
+    padding-right: 60px;
+    margin-left: auto;
+    /* margin-right: auto; */
+    max-width: 1000px;
+    text-align: right;
+  }
+
+  .about p {
+    text-align: left;
+  }
+  .main-nav {
+    display: block;
+  }
+
+  .header {
+    background-color: white;
+    width: 200px;
+    padding: 20px 0;
+  }
+  body {
+    display:flex;
+  }
+  .main-nav {
+    position: fixed;
+    top: 200px;
+    left: 50px ;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 1;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left; 
+  }
+
+  .main-nav ul {
+    width: 300px;
+    list-style: none;
+    font-size: 1.0rem;
+    line-height: 0.9em;
+    /* margin: 0;
+    padding: 0; */
+    text-align: left;    
+  }
+  /* Project page */
+  h4 {
+    text-transform: uppercase;
+    text-align: left;
+    }
+    .header {
+      background-color: white;
+      width: 0px;
+      padding: 0px;
+  }
+  
+  /* logo Brilyantova */
+  .header-brand {
+    width: 200px; 
+    padding: 130px 0px 0px 20px;
+    display: block;
+    position: fixed;   
+  }
+  /* About page */
+
+  .me {
+    display: flex;
+    flex-flow: row nowrap;
+    /* width: 100%; */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    margin-top: 140px;
+    /* max-width: 800px; */
+    }
+    
+    .me img {
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-right: 60px;
+    }
+    
+    .me p {
+    width: 400px;
+    /* padding: 40px 20px 20px 30px;  */
+    font-size: 14px;
+    text-align: left;
+    }
+    
+    .me h5 {
+    text-align: left;
+    /* padding: 40px 20px 20px 30px; */
+    }
+
+    .me h6 {
+      text-align: left;
+      /* padding: 40px 20px 20px 30px; */
+      }
+
+     
+
+}
+
 
