@@ -163,7 +163,6 @@ body {
   }
 /* JS action  */
   body.open .main-nav {
-      height: auto;
       line-height: 1.2em; 
       font-size: 1.0rem;
   }

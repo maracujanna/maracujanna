@@ -2,7 +2,12 @@
 $(document).ready(function() {
     $(".icon").on("click", function(){
         $("body").toggleClass("open frezzed");
-        // $(".main-nav").animate({height: "200px"}, 300);
+        if ($('body').hasClass('open')) {
+            $(".main-nav").animate({height: $(window).height()}, 600);
+        } else {
+            $(".main-nav").animate({height: "0px"}, 600);
+
+        }
 
     });
 });
