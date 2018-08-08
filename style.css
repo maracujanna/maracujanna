@@ -44,7 +44,6 @@ body {
   background: springgreen;
 }
 
-@media (max-width: 775px) {
   .header {
       background-color: white;
       width: auto;
@@ -70,7 +69,7 @@ body {
   /* Hamburger */
   .header .icon {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 5px;
     width: 80px;
     height: 80px;
@@ -105,27 +104,34 @@ body {
   .hamburger::after {
     top: 15px;
   }
-  /* fin of hamburger */
-
-  /* ham hover */
-  .icon:hover {
-    background: transparent;
-  } 
-  .icon:hover .hamburger {
-    background: transparent;
-  } 
 
   .icon:hover .hamburger::before {
+    top: -10px;
+  }
+
+  .icon:hover .hamburger::after {
+    top: 10px;
+  }
+  /* fin of hamburger */
+
+  body.open .icon {
+    background: transparent;
+  } 
+  body.open .icon .hamburger {
+    background: transparent;
+  } 
+
+  body.open .icon .hamburger::before {
       transform-origin: center;
       transform: rotate(135deg);
       top: 0;
   } 
-  .icon:hover .hamburger::after  {
+  body.open .icon .hamburger::after  {
       transform-origin: center;
       transform: rotate(45deg);
       top: 0;
   }
-  /* fim of ham hover */
+  
 
   /* site header */
   .site-header {
@@ -140,15 +146,15 @@ body {
     bottom: 0;
     background: rgba(0,255,127, 0.9);
     z-index: 1;
-    font-size: 2rem;
+    font-size: 0;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 0px; 
-    
+    height: 0px;  
   }
+
   .main-nav ul {
     list-style: none;
     margin: 0;
@@ -156,10 +162,10 @@ body {
     text-align: center;    
   }
 /* JS action  */
-  .main-nav.open {
+  body.open .main-nav {
       height: auto;
-      font-size: 20px;
-      line-height: 26px; 
+      line-height: 1.2em; 
+      font-size: 1.0rem;
   }
 
   .main-nav li {
@@ -168,16 +174,12 @@ body {
   .main-nav a {
     text-decoration: none;
     color: black;
-    font-size: 20px;
     /* transition: 0.3s; */
   }
-
 
   body.frezzed {
     overflow: hidden;
   }
-
-
 
   /* main nav */
   .main {
