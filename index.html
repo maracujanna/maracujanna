@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brilyantova</title>
     <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Stylesheet -->
@@ -16,65 +16,81 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="header-brand"><img src="images/logo.png" alt="janna brilyantova logo"></a>
+        <a href="index.html" class="header-brand"><img src="images/logo.png" alt="logo-brilyantova"></a>
         <div class="icon">
             <div class="hamburger"></div> 
         </div>
     </header>
     <nav class="main-nav">
         <ul class="proj-list">
-            <li><a href="portfolio1.html">Passinho Brazil Favela Digital</a></li>
-            <li><a href="nowiknow.html">Palestra Now I Know</a></li>
-            <li><a href="#">Admiravel Música Nova</a></li>
-            <li><a href="#">Kataklo Puzzle</a></li>
-            <li><a href="#">Série Jazz All Nights</a></li>
-            <li><a href="#">Studio Pilates</a></li>
-            <li><a href="#">Parsons Dance</a></li>
-            <li><a href="#">Kataklo</a></li>
-            <li><a href="#">Illustrações</a></li>
-            <li><a href="#">Convite de casamento</a></li>
-            <li><a href="#">CV</a></li>
+            <li><a href="passinho.html">passinho brazil favela digital</a></li>
+            <li><a href="musicanova.html">admirável música nova</a></li>
+            <li><a href="jazz.html">série jazz all nights</a></li>
+            <li><a href="puzzle.html">puzzle</a></li>
+            <li><a href="nowiknow.html">now i know</a></li>    
         </ul>
         <ul class="extra-menu">
-            <li><a href="">Sobre</a></li>
+            <li><a href="about.html">sobre</a></li>
         </ul>
     </nav>
     <main class="main">
         <ul class="proj-gallery">
             <li> 
                 <div class="proj-gallery-cont1">     
-                    <a href="http://">
-                        <img src="./images/proj-1.jpg" alt="">
+                    <a href="passinho.html">
+                        <img src="./images/proj-passinho.jpg" alt="img-passinho-brazil">
                     </a>
-                    <p>Passinho Brazil</p>
+                    <!-- <p>Passinho Brazil</p> -->
                 </div>
             </li>
             <li>
                 <div class="proj-gallery-cont1"> 
-                    <a href="http://">
-                        <img src="./images/proj-2.jpg" alt="">
-                        <p>Admiravel música nova</p>
+                    <a href="musicanova.html">
+                        <img src="./images/proj-musicanova-900x900px.jpg" alt="">
+                        <!-- <p>Admiravel música nova</p> -->
                     </a>
                 </div>    
             </li>
             <li>
                 <div class="proj-gallery-cont1">
-                    <a href="http://">
-                        <img src="./images/proj-3.jpg" alt="">
-                        <p>Admiravel música nova</p>
+                    <a href="jazz.html">
+                        <img src="./images/img-jazz-1.jpg" alt="">
+                        <!-- <p>Série Jazz All Nights</p> -->
                     </a>
                 </div>    
             </li>
+            <li>
+                    <div class="proj-gallery-cont1">
+                        <a href="puzzle.html">
+                            <img src="./images/proj-puzzle-900x900px.jpg" alt="">
+                            <!-- <p>Admiravel música nova</p> -->
+                        </a>
+                    </div>    
+            </li>
+            <li>
+                    <div class="proj-gallery-cont1">
+                        <a href="nowiknow.html">
+                            <img src="./images/avatar-nowiknow.jpg" alt="">
+                            <!-- <p>Now I Know</p> -->
+                        </a>
+                    </div>    
+            </li>
+            <!-- <li>
+                    <div class="proj-gallery-cont1">
+                        <a href="http://">
+                            <img src="./images/proj-3.jpg" alt="">
+                            <p>Admiravel música nova</p>
+                        </a>
+                    </div>    
+            </li>  -->
         </ul>
     </main>
-
-    <button class="btn-voltar"><i class="fas fa-arrow-up"></i><span>Voltar</span></button>
+    <button class="btn-voltar" onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i><span>Voltar</span></button>
     
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="menu.js"></script>
-
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="menu.js"></script> 
 </body>
 </html>
