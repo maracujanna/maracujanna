@@ -1,0 +1,243 @@
+@import "hamburger";
+@import "cortina";
+
+.header {
+  background-color: white;
+  // position: fixed;
+  // top: 0; left: 0; right: 0;
+  height: 78px;
+  width: auto;
+  padding: 20px 0;
+  z-index: 2;
+}
+
+/* logo Brilyantova */
+.header-brand {
+  width: 200px;
+  padding: 5px 0 5px 20px;
+  display: block; 
+  position: relative;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.header-brand img {
+  width: 200px;
+  padding: 5px 0 5px 0px;
+  display: block; 
+  position: relative;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+// Main-nav
+.main-nav {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--cor-bg_destaque-transp);
+  z-index: 1;
+  font-size: 0;
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 0px;  
+  transition: height .4s ease;
+}
+
+.open .main-nav {
+  height: 100%;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+  width: 90vw;   
+}
+
+/* JS action  */
+body.open .main-nav {
+    line-height: 1.2em; 
+    font-size: 1.0rem;
+}
+
+.main-nav li {
+  margin: 0 0 1em;
+  display: block;
+}
+
+.main-nav a {
+  font-size: 0;
+  line-height: 2;
+  text-decoration: none;
+  color: var(--cor-texto);
+  transition: 0.3s;
+}
+.open .main-nav a {
+  font-size: 1.5rem;
+}
+
+body.frezzed {
+  overflow: hidden;
+}
+
+// btns projs e sobre
+.btn-projs, .btn-sobre {
+  display: none;
+  border: 1px solid transparent;
+  position: relative;
+  padding: 0 4px;
+  margin: 0;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--cor-texto);
+  text-decoration: none;
+  cursor: pointer;
+  appearance: none;
+  
+  &:focus {
+    // border: 1px dashed var(--cor-destaque);
+    outline: none;
+  }
+
+  &::after {
+    content:'';
+    display: block;
+    position: fixed;
+    bottom: -.5rem; left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--cor-texto);
+    transition: width .4s ease;
+  }
+  &:hover::after {
+    content:'';
+    width: 100%;
+  }
+}
+
+.extra-menu {
+  display: block;
+  width: 400px;
+  list-style: none;
+  font-size: 1.0rem;
+  font-weight: 400;
+  line-height: 2;
+  text-align: left;
+  li {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  
+  .header {
+    background-color: white;
+    // width: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  
+  /* logo Brilyantova */
+  .header-brand {
+    width: auto;
+    padding: 10px;
+    display: block;
+    position: fixed; 
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .header-brand img {
+    width: 200px;
+    padding: 5px 0 5px 0px;
+    display: block; 
+    position: relative;
+  }
+
+  // btns projs e sobre
+  .btn-projs, .btn-sobre {
+    display: block;
+    position: fixed;
+    transform-origin: center;
+  }
+
+  .btn-projs {
+    transform: translateY(-50%) rotate(-90deg);
+    top: 50%;
+    left: 5px;
+  }
+
+  .btn-sobre {
+    transform: translateY(-50%) rotate(90deg);
+    top: 50%;
+    right: 7px;
+  }
+
+  .main-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 0; left: 0; bottom: 0;
+    width: 400px;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transform: translateX(-400px);
+    transition: all .4s ease;
+  }
+  
+  .extra-menu {
+    display: none;
+  }
+
+  ul.proj-list {
+    pointer-events: none;
+    width: 400px;
+    list-style: none;
+    font-size: 1.0rem;
+    font-weight: 400;
+    line-height: 2;
+    text-align: left;
+    
+    li {
+      margin: 0 0 0 5rem;
+    }
+  }
+
+  .sidebar-open {
+
+    .main-nav {
+      transform: translateX(0);
+      width: 400px;
+    }
+
+    .main-nav a {
+      font-size: 1rem;
+    }
+
+    ul.proj-list {
+      pointer-events: auto;
+    }
+  }
+
+  
+  
+  .main-nav a {
+    font-size: 1.2rem;
+  }
+
+  .main-nav a:hover {
+    color: var(--cor-destaque); 
+  }
+
+  
+}
