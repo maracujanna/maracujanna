@@ -17,15 +17,19 @@
 			<br><br>
 		</p>
 		<h5>EXPERIÊNCIA</h5>
+		<p><b>2018  -  19</b> <br>
+		Designer Gráfico /
+		EAV Parque Lage
+		</p>
 		<p><b>2017  -  18</b> <br>
 		Designer freelance
 		</p>
 		<p><b>2012  -  16</b> <br>
-		Designer Gráfico Pleno /
+		Designer Gráfico /
 		Dell'arte soluções Culturais 
 		</p>
 		<p><b>2011  -  12</b> <br>
-		Designer Gráfico Junior /
+		Designer Gráfico /
 		Dell'Arte Soluções Culturais 
 		</p>
 		<br>
