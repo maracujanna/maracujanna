@@ -1,0 +1,31 @@
+/* Pag Passinho */
+.projeto img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;   
+  display: block;  
+  margin: 10px 0px 10px 0px;
+}
+
+.about {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  margin-top: 20px;
+  height: 0px;
+}
+
+.video iframe {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}

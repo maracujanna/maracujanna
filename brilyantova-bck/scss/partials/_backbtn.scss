@@ -1,0 +1,30 @@
+// Botao voltar
+.btn-voltar {
+  display: none;    
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 2px solid var(--cor-bg_destaque);
+  background: white;
+  /* botao fica com 28px */
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  transition: background-color .4s ease;
+}
+
+.btn-voltar span {
+  // hide text
+  font-size: 0;
+}
+
+/* show fontawesome icon */
+.btn-voltar .fas::before {
+  font-size: 16px;
+  line-height: 16px; 
+}
+
+.btn-voltar:hover {
+  background: var(--cor-bg_destaque);
+}

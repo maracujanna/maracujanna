@@ -1,0 +1,18 @@
+#cortina {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: #ffffff00;
+  z-index: -1;
+  pointer-events: none;
+  transition: background-color .4s ease; 
+}
+
+.sidebar-open #cortina {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: #ffffff99;
+  z-index: 1;
+  cursor: url("../images/cursor-close-x.png"), auto ;
+  pointer-events: auto;
+}
+
