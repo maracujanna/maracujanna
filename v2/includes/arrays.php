@@ -32,6 +32,11 @@
       link    => "projs/fipet.php",
       thumb   => "/images/fipet-thumb.jpg"
     ),
+    array(
+      title   => "Ilustrações",
+      link    => "projs/ilustracoes.php",
+      thumb   => "/images/illustration-thumb.jpg"
+    ),
 
   );
 ?>
