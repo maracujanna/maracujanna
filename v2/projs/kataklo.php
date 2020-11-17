@@ -18,16 +18,16 @@
 			<iframe src="https://www.youtube.com/embed/axV9Ywc2z38?start=20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 		</div> 
 		<div class="proj-gallery-cont1">
-			<img src="<?php echo BASE_URL;?>images/poster-puzzle2.jpg" alt="poster-puzzle">
+			<img src="<?php echo BASE_URL;?>images/poster-puzzle3.jpg" alt="poster-puzzle">
 		</div>  
 		<div class="proj-gallery-cont1">
 			<img src="<?php echo BASE_URL;?>images/fonts-puzzle.jpg" alt="fonts-nowiknow">
 		</div>    
 		<div class="proj-gallery-cont1">
-			<img src="<?php echo BASE_URL;?>images/revista-puzzle.jpg" alt="revista-kataklo-puzzle">
+			<img src="<?php echo BASE_URL;?>images/revista-puzzle2.jpg" alt="revista-kataklo-puzzle">
 		</div>
 		<div class="proj-gallery-cont1">
-			<img src="<?php echo BASE_URL;?>images/banner-puzzle2.jpg" alt="banner-kataklo-puzzle">
+			<img src="<?php echo BASE_URL;?>images/banner-puzzle3.jpg" alt="banner-kataklo-puzzle">
 		</div>
 		<div class="proj-gallery-cont1">
 			<img src="<?php echo BASE_URL;?>images/bag-puzzle2.jpg" alt="bag-kataklo-puzzle">

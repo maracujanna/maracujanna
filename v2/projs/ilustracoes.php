@@ -12,6 +12,18 @@
 			<h4>Ilustrações</h4>
 		</div>  
 		<div class="proj-gallery-cont1">
+				<img src="<?php echo BASE_URL;?>images/illustration/illus-duda.jpg" alt="Digital Watercollor illustration of the singer Duda Beat">
+		</div>
+		<div class="proj-gallery-cont1">
+				<img src="<?php echo BASE_URL;?>images/illustration/illus-mychoice.jpg" alt="Digital Watercollor illustration of a stylised uterus">
+		</div>
+		<div class="proj-gallery-cont1">
+				<img src="<?php echo BASE_URL;?>images/illustration/illus-city.jpg" alt="Digital Watercollor illustration of 3 houses">
+		</div>
+		<div class="proj-gallery-cont1">
+				<img src="<?php echo BASE_URL;?>images/illustration/illus-tom.jpg" alt="Digital Watercollor illustration of a baby">
+		</div>
+		<div class="proj-gallery-cont1">
 				<img src="<?php echo BASE_URL;?>images/illustration/Dancing_Girl.jpg" alt="Dancing Girl Illustration">
 		</div>
 		<div class="proj-gallery-cont1">

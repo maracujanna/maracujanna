@@ -11,26 +11,22 @@
 	<div class="texto">
 		<h4>Olá!</h4>
 		<p>
-			Meu nome é Janna Brilyantova. Sou designer gráfica e illustradora Russa que me apaixonei pelo Rio e nunca mais voltei. Nos últimos 7 anos tive o prazer de trabalhar com os mais diversos tipos de projetos, nas mais diversas áreas, mas minha expertise e o que mais gosto de fazer são projetos culturais.
+			Meu nome é Janna Brilyantova. Sou designer gráfica e illustradora Russa que me apaixonei pelo Rio e nunca mais voltei. Nos últimos 9 anos tive o prazer de trabalhar com os mais diversos tipos de projetos, nas mais diversas áreas, mas minha expertise e o que mais gosto de fazer são projetos culturais.
 			<br><br>
 			Quando não estou à aderiva no Photoshop ou desvendando mistérios do JavaScript estou mundo afora tentando salvar o meio ambiente.
 			<br><br>
 		</p>
 		<h5>EXPERIÊNCIA</h5>
 		<p><b>2018  -  19</b> <br>
-		Designer Gráfico /
+		Designer /
 		EAV Parque Lage
 		</p>
 		<p><b>2017  -  18</b> <br>
-		Designer freelance
+		Designer freelancer
 		</p>
-		<p><b>2012  -  16</b> <br>
+		<p><b>2011  -  16</b> <br>
 		Designer Gráfico /
 		Dell'arte soluções Culturais 
-		</p>
-		<p><b>2011  -  12</b> <br>
-		Designer Gráfico /
-		Dell'Arte Soluções Culturais 
 		</p>
 		<br>
 
