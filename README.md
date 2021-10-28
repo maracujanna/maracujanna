@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @maracujanna
 - 👀 I’m interested in UX/UI
-- 🌱 I’m currently learning Html/Css, JavaScript
+- 🌱 I’m currently learning HTML/CSS, JavaScript
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me jannabrilyantova@gmal.com
 
